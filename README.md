@@ -8,8 +8,10 @@ For your Windows machine, you'll need to get the [SSH-Sessions module](http://ww
 
 For your XBMC machine, you'll need the xbmc-send client installed. For example, to install on an Xbian machine:
 
-    sudo apt-get update
-    sudo install xbmc-eventclients-xbmc-send
+```console
+sudo apt-get update
+sudo install xbmc-eventclients-xbmc-send
+```
 
 ## Installation
 
@@ -21,12 +23,18 @@ Once you have the pre-requisties installed and have set up the variables mention
 
 The first thing you'll need to do is establish a connection:
 
-    PM> Connect-Xbmc
+```powershell
+PM> Connect-Xbmc
+```
 
 You can then invoke the many functions included. If you want to test everything is working, why not start simple and send a test notification?
 
-    PM> Invoke-XbmcTestCommand
+```powershell
+PM> Invoke-XbmcTestCommand
+```
 
 Once you are done, just end your session:
 
-    PM> Disconnect-Xbmc
+```powershell
+PM> Disconnect-Xbmc
+```
